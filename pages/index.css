@@ -1,0 +1,308 @@
+@import url(../vendor/normalize.css);
+@import url(../blocks/page/page.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__links/header__links.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__link/_status/header__link_status_enable.css);
+
+@import url(../blocks/lead/lead.css);
+@import url(../blocks/lead/__title/lead__title.css);
+@import url(../blocks/lead/__subtitle/lead__subtitle.css);
+@import url(../blocks/lead/__image/lead__image.css);
+@import url(../blocks/lead/__caption/lead__caption.css);
+
+@import url(../blocks/intro/intro.css);
+@import url(../blocks/intro/__title/intro__title.css);
+@import url(../blocks/intro/__text/intro__text.css);
+@import url(../blocks/intro/__list/intro__list.css);
+@import url(../blocks/intro/__list-item/intro__list-item.css);
+
+@import url(../blocks/photo-grid/photo-grid.css);
+@import url(../blocks/photo-grid/__item/photo-grid__item.css);
+
+@import url(../blocks/places/places.css);
+@import url(../blocks/place/place.css);
+@import url(../blocks/place/__title/place__title.css);
+@import url(../blocks/place/__website/place__website.css);
+@import url(../blocks/place/__url-heading/place__url-heading.css);
+@import url(../blocks/place/__link/place__link.css);
+@import url(../blocks/place/__image/place__image.css);
+@import url(../blocks/place/__paragraphs/place__paragraphs.css);
+@import url(../blocks/place/__paragraph/place__paragraph.css);
+
+@import url(../blocks/cover/cover.css);
+@import url(../blocks/cover/__title/cover__title.css);
+@import url(../blocks/cover/__subtitle/cover__subtitle.css);
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__links/footer__links.css);
+@import url(../blocks/footer/__link/footer__link.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Inter/Inter-Regular.woff2") format("woff2"),
+         url("../fonts/Inter/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/Inter/Inter-Black.woff2") format("woff2"),
+         url("../fonts/Inter/Inter-Black.woff") format("woff");
+  } 
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .page {
+        width: 1024px;
+    }
+    .lead__subtitle {
+        margin-bottom: 56px;
+    }  
+    .lead__image {
+        height: 580px;
+        width: 928px;
+    }
+    .lead__caption {
+        width: 928px;
+    }
+    .intro {
+        width: 928px;
+    }
+    .photo-grid {
+        gap: 14px;
+        grid-template-columns: repeat(3, min-content);
+        grid-template-rows: repeat(4, min-content);
+    }
+    .photo-grid__item {
+        width: 300px;
+        height: 225px;
+    }
+    .place {
+        display: grid;
+        grid-template-columns: 440px 456px;
+        column-gap: 32px;
+    }
+    .place__image {
+        width: 440px;
+        height: 440px;
+    }
+    .cover {
+        width: 1024px;
+        height: 640px;
+        padding-top: 195px;
+    }
+    .footer {
+        width: 928px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .page {
+        width: 768px;
+    }
+    .header {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .lead {
+        margin-bottom: 88px;
+    }
+
+    .lead__image {
+        height: 480px;
+        width: 768px;
+    }
+    .lead__caption {
+        width: 720px;
+    }
+    .intro {
+        width: fit-content;
+    }
+    .intro__title {
+        width: 720px;
+    }
+    .intro__text {
+        width: 720px;
+    }
+    .intro__list-item {
+        width: 720px;    
+    }
+    .photo-grid {
+        gap: 16px;
+        grid-template-columns: repeat(2, min-content);
+        grid-template-rows: repeat(6, min-content);
+    }
+    .photo-grid__item {
+        width: 352px;
+        height: 264px;
+    }
+
+
+    .place {
+        display: grid;
+        grid-template-columns: 340px 352px;
+        column-gap: 16px;
+    }
+    .place__title {
+        font-size: 42px;
+        line-height: 1.1;
+        word-spacing: 10px;
+    }
+    .place__image {
+        width: 340px;
+        height: 340px;
+    }
+    .place__paragraph {
+        font-size: 16px;
+
+    }
+    .cover {
+        width: 768px;
+        height: 480px;
+        padding-top: 115px;
+    }
+    .footer {
+        width: 720px;
+    }
+
+}
+
+
+@media screen and (max-width: 425px) {
+    .page {
+        width: 320px;
+    }
+    .header {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 16px;
+    }
+    .header__logo {
+        width: 142px;
+        height: 42px;
+        box-sizing: border-box;
+    }
+    .header__links {
+        margin-top: 14px;
+    }
+    .header__link {
+        font-size: 18px;
+        line-height: 1.11;
+    }
+    .lead {
+        margin-bottom: 64px;
+    }
+    .lead__title {
+        margin-bottom: 16px;
+        font-size: 40px;
+        line-height: 1.1;
+        min-height: 88px;
+        width: 288px;
+    }
+    .lead__subtitle {
+        margin-bottom: 40px;
+        font-size: 16px;
+        line-height: 1.25;
+        min-height: 40px;
+        width: 288px;
+    }
+    .lead__image {
+        height: 200px;
+        width: 320px;
+    }
+    .lead__caption {
+        width: 288px;
+    }
+    .intro__title {
+        width: 288px;
+        font-size: 32px;
+        line-height: 1.09;
+    }
+    .intro__text {
+        width: 288px;
+    }
+    .intro__list-item {
+        width: 288px;    
+    }
+    .photo-grid {
+        gap: 12px;
+        grid-template-columns: repeat(1, min-content);
+        grid-template-rows: repeat(12, min-content);
+    }
+    .photo-grid__item {
+        width: 288px;
+        height: 216px;
+    }
+
+    .place {
+        display: grid;
+        grid-template-columns: 320px;
+        row-gap: 32px;
+    }
+    .place__title {
+        font-size: 32px;
+        line-height: 1.09;
+        word-spacing: 0;
+        width: 288px;
+        margin: 0 auto;
+    }
+    .place__website { 
+        width: 288px;
+        margin: 0 auto;
+    }
+
+    .place__image {
+        width: 320px;
+        height: 320px;
+    }
+    .place__paragraph {
+        width: 288px;
+        margin: 0 auto;
+
+    }
+    .cover {
+        width: 320px;
+        height: 200px;
+        padding-top: 33px;
+    }
+    .cover__title {
+        margin-bottom: 16px;
+        font-size: 32px;
+        line-height: 1.09;
+        width: 288px;
+    }
+    .cover__subtitle {
+        font-size: 14px;
+        line-height: 1.14;
+        width: 288px;
+        
+    }
+    .footer {
+        width: 288px;
+        flex-direction: column;
+        gap: 48px;
+        height: fit-content;
+    }
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        }
+    .footer__link {
+        font-size: 24px;
+        line-height: 1;
+    }    
+    .footer__copyright {
+        margin-top: 0px;
+        line-height: 1;
+        margin-bottom: 24px;
+    }        
+
+}
