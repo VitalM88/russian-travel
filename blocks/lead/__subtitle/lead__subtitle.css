@@ -11,3 +11,20 @@
     min-height: 72px;
     width: 640px;
 }
+
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+    .lead__subtitle {
+        margin-bottom: 56px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lead__subtitle {
+        margin-bottom: 40px;
+        font-size: 16px;
+        line-height: 1.25;
+        min-height: 40px;
+        width: 288px;
+    }
+}
+

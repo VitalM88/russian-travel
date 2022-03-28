@@ -4,3 +4,15 @@
     padding-top: 28px;
     margin-bottom: 92px;
 }
+
+@media screen and (max-width: 1024px) {
+    .lead {
+        margin-bottom: 88px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lead {
+        margin-bottom: 64px;
+    }
+}

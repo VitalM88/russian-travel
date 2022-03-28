@@ -3,3 +3,24 @@
     height: 615px;
     width: 984px;
 }
+
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+    .lead__image {
+        height: 580px;
+        width: 928px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .lead__image {
+        height: 480px;
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lead__image {
+        height: 200px;
+        width: 320px;
+    }
+}

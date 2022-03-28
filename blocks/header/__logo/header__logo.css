@@ -6,6 +6,12 @@
     width: 176px;
     height: 52px;
     box-sizing: border-box;
-  
-    
+}
+
+@media screen and (max-width: 768px) {
+    .header__logo {
+        width: 142px;
+        height: 42px;
+        box-sizing: border-box;
+    }
 }
