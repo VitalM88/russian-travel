@@ -1,57 +1,55 @@
 .cover {
-    width: 1184px;
-    height: 740px;
-    margin: 0 auto;
-    margin-bottom: 92px;
-    background-image: url(../../images/cover/__background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 245px;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    cursor: pointer;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 1184px;
+  min-height: 740px;
+  margin: 0 auto;
+  margin-bottom: 92px;
+  background-image: url(../../images/cover/__background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  justify-content: center;
 }
 
 .cover::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #2A2C2F;
-    opacity: 30%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2A2C2F;
+  opacity: 30%;
 }
 
 .cover:hover::before {
-    opacity: 80%;
+  opacity: 80%;
 }
 
 @media screen and (max-width: 1280px) and (min-width: 1025px) {
-    .cover {
-        width: 100%;
-        max-width: 1024px;
-        height: 640px;
-        padding-top: 195px;
-    }
+  .cover {
+      width: 100%;
+      max-width: 1024px;
+      min-height: 640px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    .cover {
-        width: 100%;
-        max-width: 768px;
-        height: 480px;
-        padding-top: 115px;
-    }
+  .cover {
+      width: 100%;
+      max-width: 768px;
+      min-height: 480px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .cover {
-        width: 320px;
-        height: 200px;
-        padding-top: 33px;
-    }
+  .cover {
+      width: 320px;
+      min-height: 200px;
+  }
 }
+

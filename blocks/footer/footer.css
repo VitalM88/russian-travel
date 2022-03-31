@@ -1,8 +1,8 @@
 .footer {
     display: flex;
     margin: 0 auto;
+    padding-bottom: 24px;
     width: 1184px;
-    height: 42px;
     justify-content: space-between;
     align-items: flex-start;
 }
