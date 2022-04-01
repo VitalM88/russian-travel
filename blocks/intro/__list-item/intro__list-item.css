@@ -1,5 +1,4 @@
 .intro__list-item {
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -11,11 +10,12 @@
 
 @media screen and (max-width: 1024px) {
     .intro__list-item {
-        width: 720px;
+        width: 100%;
+        max-width: 720px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
     .intro__list-item {
         width: 288px;
     }

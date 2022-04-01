@@ -25,13 +25,15 @@
         gap: 16px;
         grid-template-columns: repeat(2, min-content);
         grid-template-rows: repeat(6, min-content);
-    }
+        }
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 425px) {
     .photo-grid {
         gap: 12px;
         grid-template-columns: repeat(1, min-content);
         grid-template-rows: repeat(12, min-content);
+        margin-bottom: 64px;
     }
 }

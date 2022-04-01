@@ -15,5 +15,13 @@
 @media screen and (max-width: 1024px) {
     .intro {
         width: fit-content;
+        margin-bottom: 88px;
     }
+}
+
+
+@media screen and (max-width: 425px) {
+  .intro {
+      margin-bottom: 64px;
+  }
 }
